@@ -51,7 +51,7 @@
                 progess += 1; //加载进度
                 ctx.fillStyle = "#39c5bb";
                 //绘制进度条
-                ctx.fillRect(0, canvas.height / 2 - 20, canvas.width * (progess / 5), 40);
+                ctx.fillRect(0, canvas.height / 2 - 20, canvas.width * (progess / srcNum), 40);
                 if (progess === srcNum) {
                     indexx();
                 }

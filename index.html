@@ -269,7 +269,7 @@
             plus1s.s = 0;
             cmrH = 0;
             for (i = 0; i < leavesNum; i++) {
-                leaaf[i] = new leaff(canvas.width / 2, canvas.height - i * 300 - 300);
+                leaaf[i] = new leaff( i < 5 ? (canvas.width / 2) : (Math.floor(Math.random() * (canvas.width - 400) + 200)), canvas.height - i * 300 - 300);
             }
             for (i = 0; i < 2 * leavesNum; i++) {
                 clouds[i] = new cloud();
